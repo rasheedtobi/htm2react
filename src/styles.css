@@ -1,0 +1,74 @@
+body {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .page-container {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  footer {
+    margin-top: auto;
+    /* Push the footer to the bottom */
+    background-color: #333;
+    color: #fff;
+    padding: 10px 0 0 0;
+    text-align: center;
+  }
+  
+  #filter-buttons button {
+    border-radius: 3px;
+    background: #fff;
+    border-color: transparent;
+  }
+  
+  #filter-buttons button:hover {
+    background: #ddd;
+  }
+  
+  #filter-buttons button.active {
+    color: #fff;
+    background: #6c757d;
+  }
+  
+  #filterable-cards .card {
+    width: 15rem;
+    border: 2px solid transparent;
+  }
+  
+  #filterable-cards .card.hide {
+    display: none;
+  }
+  
+  .border-right {
+    border: 1px solid #000;
+    /* You can adjust the border style as needed */
+  }
+  
+  @media (max-width: 600px) {
+    #filterable-cards {
+      justify-content: center;
+    }
+  
+    #filterable-cards .card {
+      width: calc(100% / 2 - 10px);
+    }
+  }
+  
+  .card {
+    border: 1px solid #ccc;
+    padding: 10px;
+    margin: 10px;
+    width: 200px;
+    height: 300px;
+    display: inline-block;
+    box-sizing: border-box;
+  }
+  img {
+    width: 100%;
+    height: auto;
+  }
+  
